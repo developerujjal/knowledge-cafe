@@ -1,0 +1,67 @@
+.thubm-card{
+    width: 95%;
+    margin-bottom: 50px;
+}
+
+.thumb-img {
+    width: 100%;
+}
+
+.thumb-img img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.author-stuff-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px 8px 0px;
+}
+
+.author-stuff-container {
+    display: flex;
+    gap: 12px;
+}
+
+.author-stuff-container img {
+    width: 13%;
+}
+
+.thub-title {
+    width: 70%;
+    color: #111111;
+}
+
+
+.thub-tags span {
+    margin-right: 8px;
+}
+
+.thub-tags span a{
+    color: #11111199;
+}
+
+.author-name-container p span, .reading-time-container {
+    color: #11111199;
+}
+
+.thub-tags {
+    padding: 14px 0px;
+}
+
+.thub-title h1 {
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.author-name-container h3 {
+    font-weight: 700;
+    color: #111111;
+}
+
+.reading-time-container {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}

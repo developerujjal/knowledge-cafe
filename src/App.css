@@ -1,0 +1,23 @@
+.blogs-bookmarks-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0px;
+}
+
+
+
+
+
+@media screen and (max-width:639px) {
+    .blogs-bookmarks-wrapper{
+        flex-direction: column;
+    }
+
+    .blogs-container{
+        width: 100% !important;
+    }
+
+    .bookmarks-container{
+        width: 100% !important;
+    }
+}
