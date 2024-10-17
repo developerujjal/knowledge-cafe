@@ -3,7 +3,7 @@ import './Blog.css'
 
 
 const Blog = ({ blog, handleAddBookmarks, handleReadingTime }) => {
-    const { title, cover_img, reading_time, author_img, author, posted_date, hashtags } = blog
+    const { title, cover_img, reading_time, id, author_img, author, posted_date, hashtags } = blog
     return (
         <div className='thubm-card'>
             <div className='thumb-img'>
@@ -33,7 +33,7 @@ const Blog = ({ blog, handleAddBookmarks, handleReadingTime }) => {
                 }
             </div>
             <div className='btn-container'>
-                <button onClick={() => handleReadingTime(reading_time)}>Mark as Read</button>
+                <button onClick={() => handleReadingTime(reading_time, id)}>Mark as Read</button>
             </div>
         </div>
     )

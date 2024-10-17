@@ -7,7 +7,7 @@ const Bookmarks = ({ bookmarks, readingtime }) => {
         <div className="bookmarks-container">
 
             <div className='reading-time-main'>
-                <p>Spent time on read : {readingtime}</p>
+                <p>Spent time on read : {readingtime} min</p>
             </div>
 
 
