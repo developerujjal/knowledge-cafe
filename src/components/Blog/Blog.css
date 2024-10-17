@@ -1,5 +1,5 @@
 .thubm-card{
-    width: 95%;
+    width: 100%;
     margin-bottom: 50px;
 }
 
@@ -21,11 +21,12 @@
 
 .author-stuff-container {
     display: flex;
+    align-items: center;
     gap: 12px;
 }
 
 .author-stuff-container img {
-    width: 13%;
+    width: 100%;
 }
 
 .thub-title {
@@ -64,4 +65,31 @@
     display: flex;
     gap: 6px;
     align-items: center;
+}
+
+.reading-time-container i{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reading-time-container i:hover{
+    color: rgb(14, 13, 13);
+}
+
+.btn-container button{
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #6047EC;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.card-img-author {
+    width: 13%;
+}
+
+.btn-container button:hover{
+    color: #4c3bad;
 }

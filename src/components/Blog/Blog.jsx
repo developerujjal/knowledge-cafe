@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import './Blog.css'
 
 
-const Blog = ({ blog }) => {
-    const { title, cover_img, reading_time, author_img, author, posted_date, hashtags  } = blog
+const Blog = ({ blog, handleAddBookmarks, handleReadingTime }) => {
+    const { title, cover_img, reading_time, author_img, author, posted_date, hashtags } = blog
     return (
         <div className='thubm-card'>
             <div className='thumb-img'>
@@ -11,7 +11,9 @@ const Blog = ({ blog }) => {
             </div>
             <div className='author-stuff-main'>
                 <div className='author-stuff-container'>
-                    <img src={author_img} alt="" />
+                    <div className='card-img-author'>
+                        <img src={author_img} alt="" />
+                    </div>
                     <div className='author-name-container'>
                         <h3>{author}</h3>
                         <p><span>{posted_date}</span></p>
@@ -19,7 +21,7 @@ const Blog = ({ blog }) => {
                 </div>
                 <div className='reading-time-container'>
                     <p><span>{reading_time}</span> Min Read</p>
-                    <i className="material-icons">bookmark_added</i>
+                    <i onClick={() => handleAddBookmarks(blog)} className="material-icons">bookmark_added</i>
                 </div>
             </div>
             <div className='thub-title'>
@@ -27,18 +29,20 @@ const Blog = ({ blog }) => {
             </div>
             <div className='thub-tags'>
                 {
-                    hashtags.map((tag, index)=> <span key={index}><a href="#">{tag}</a></span>)
+                    hashtags.map((tag, index) => <span key={index}><a href="#">{tag}</a></span>)
                 }
             </div>
-            <div>
-                <a href="#">Mark as read</a>
+            <div className='btn-container'>
+                <button onClick={() => handleReadingTime(reading_time)}>Mark as Read</button>
             </div>
         </div>
     )
 }
 
 Blog.propTypes = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleAddBookmarks: PropTypes.func.isRequired,
+    handleReadingTime: PropTypes.func.isRequired
 }
 
 export default Blog;

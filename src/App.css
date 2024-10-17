@@ -1,7 +1,8 @@
 .blogs-bookmarks-wrapper{
     display: flex;
     justify-content: space-between;
-    padding: 35px 0px;
+    padding: 35px 30px;
+    gap: 40px;
 }
 
 
@@ -10,7 +11,8 @@
 
 @media screen and (max-width:639px) {
     .blogs-bookmarks-wrapper{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        padding: 30px 0px;
     }
 
     .blogs-container{
@@ -19,5 +21,26 @@
 
     .bookmarks-container{
         width: 100% !important;
+    }
+
+
+    .author-stuff-container{
+        width: 55% !important;
+    }
+
+    .card-img-author{
+        width: 25%!important;
+    }
+
+    .thub-title{
+        width: 100% !important;
+    }
+
+    .thub-title h1{
+        font-size: 1.8rem;
+    }
+
+    .singel-blog-main{
+        padding: 25px 15px !important;
     }
 }
